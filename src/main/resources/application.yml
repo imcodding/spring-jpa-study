@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/jpashop
-#    url: jdbc:h2:mem:test # 메모리 모드
+#    url: jdbc:h2:tcp://localhost/~/jpashop
+    url: jdbc:h2:mem:test # 메모리 모드
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -12,5 +12,8 @@ spring:
       hibernate:
       # show_sql: true
         format_sql: true
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
 logging.level:
   org.hibernate.SQL: debug
