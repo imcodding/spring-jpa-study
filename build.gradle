@@ -24,6 +24,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-devtools' // 캐시 제거, 리로딩 등 처리 해줌
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.0' // 쿼리 파라미터 로그 남기기. 테스트용
+	implementation 'org.springframework.boot:spring-boot-starter-validation' // 스프링 부트 2.3 이상
 
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
